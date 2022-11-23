@@ -7,6 +7,8 @@ namespace Testing
     public interface IProductRepository
     {
         public Product AssignCategory();
+
+        public void DeleteProduct(Product product);
         public IEnumerable<Product> GetAllProducts();
 
         public IEnumerable<Category> GetCategories();
