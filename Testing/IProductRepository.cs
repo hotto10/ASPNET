@@ -6,9 +6,13 @@ namespace Testing
 {
     public interface IProductRepository
     {
+        public Product AssignCategory();
         public IEnumerable<Product> GetAllProducts();
 
+        public IEnumerable<Category> GetCategories();
+
         public Product GetProduct(int id);
+        public void InsertProduct(Product productToInsert);
 
         public void UpdateProduct(Product product);
     }
